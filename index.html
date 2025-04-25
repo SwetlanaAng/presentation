@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/moon.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="https://blog.chun.no/images/2019-04-01-react-native.png" data-state="make-it-pop"></section>
+				<section data-markdown>
+					<textarea data-template>
+						## The magic of React Native
+
+						Subtitle: Build Native Apps with JavaScript
+						Presented by:  Angeliuk Svetlana
+						<!-- A paragraph with some text and a [link](https://hakim.se). -->
+						<!-- ---
+						## Slide 2
+						---
+						## Slide 3 -->
+					</textarea>
+				</section>
+				<section  data-state="make-it-pop">
+					<h2>What is React Native?</h2>
+					<div style="display: flex;">
+					<ul>
+						<li class="fragment">An open-source framework by Meta (formerly Facebook)</li>
+						<li class="fragment">Allows building mobile apps using JavaScript and React</li>
+						<li class="fragment">Enables cross-platform development (iOS and Android)</li>
+					</ul>
+					<div style="margin: 60px;">
+						<img width="800" alt=" c" src="https://www.bamboonine.co.uk/wp-content/uploads/2022/11/bigstock-Moscow-Oct-Meta-Lo-437891606-1024x688.jpg">
+					</div>
+					</div>
+				</section>
+				<section>
+						<h2>Why Use React Native?</h2>
+						<div style="display: flex;">
+							<div>
+								<div><img width="50" alt=" c" src="https://cdn-icons-png.flaticon.com/512/6900/6900618.png">Write once, use anywhere (code reuse across platforms)</div>
+								<div><img width="50" alt=" c" src="https://cdn-icons-png.flaticon.com/512/6900/6900618.png">Fast development with Hot Reloading</div>
+							</div>
+							<div>
+								<div><img width="50" alt=" c" src="https://cdn-icons-png.flaticon.com/512/6900/6900618.png">Strong community and large ecosystem</div>
+								<div><img width="50" alt=" c" src="https://cdn-icons-png.flaticon.com/512/6900/6900618.png">Backed by a tech giant (Meta)</div>
+							</div>
+						</div>
+				</section>
+				<section>
+						<h2>How Does React Native Work?</h2>
+						<p>Uses a JavaScript bridge to communicate with native modules</p>
+						<p>Renders UI using native components (not WebView)</p>
+						<p>Core idea: combine the best of native and React</p>
+				</section>
+				<section>
+					<section>
+						<h2>Pros and Cons of React Native</h2>
+					</section>
+					<section>
+						<h2>Pros:</h2>
+						<ul>
+							<li>Code reusability</li>
+							<li>Faster development</li>
+							<li>Strong community support</li>
+							<li>Third-party plugin support</li>
+							<li>Native-like performance</li>
+							<li>Strong developer tools (e.g., React DevTools, Flipper)</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Cons:</h2>
+						<ul>
+							<li>Not ideal for complex animations or games</li>
+							<li>Native modules sometimes required</li>
+							<li>Performance may be slightly lower than fully native apps</li>
+							<li>Debugging can be challenging</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2>Example Use Cases / Apps Built with React Native</h2>
+						<img class="fragment" width="250" alt=" c" src="https://cdn6.aptoide.com/imgs/9/7/9/9798f8d36ceb13c024595c2c0410158a_fgraphic.png">
+						<img class="fragment" width="250" alt=" c" src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202212/instagram-users-irked-with-the-new-update-sixteen_nine.jpg?size=1200:675">
+						<img class="fragment" width="250" alt=" c" src="https://futurestartup.com/wp-content/uploads/2021/06/Airbnb.png">
+						<img class="fragment" width="250" alt=" c" src="https://www.coffeegeek.fr/wp-content/uploads/2023/11/Discord-Symbol.png">
+						<img class="fragment" width="250" alt=" c" src="https://www.ecommerce-nation.com/wp-content/uploads/2018/01/Shopify-ecommerce-platform.png.webp">
+				</section>
+				<section>
+					<h3>let me show you a piece of simple react native code for clarity</h3>
+					<pre><code data-trim data-noescape>
+					import React from 'react';
+					import {Text, View} from 'react-native';
+
+					const YourApp = () => {
+					return (
+						<View
+						style={{
+							flex: 1,
+							justifyContent: 'center',
+							alignItems: 'center',
+						}}>
+						<Text>Try editing me! 🎉</Text>
+						</View>
+					);
+					};
+
+					export default YourApp;
+					</code></pre>
+				</section>
+				<section>
+					<h2>Conclusion</h2>
+					<p>React Native is a powerful tool for mobile app development, it is perfect for startups, MVPs, and cross-platform solutions</p>	
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				progress: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
